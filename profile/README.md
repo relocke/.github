@@ -3,6 +3,8 @@
 
 <div align="center">
 
+<img src="https://avatars.githubusercontent.com/u/46915607?s=240&v=4" alt="ReLocke icon" width="120" height="120">
+
 # ReLocke
 
 ### Open Source Finance for interoperable governance.
@@ -71,6 +73,14 @@ The intention is not to prescribe one universal financial system. It is to make 
 ReLocke currently supports **WAX, Vaulta, XPR Network, XRP Ledger, and Jungle testnet**.
 
 Each blockchain is handled through a ReLocke chain profile that respects its native account, contract, token, permission, and transaction model. Support for a chain does not imply that every chain implements governance or programmable assets in the same way.
+
+## ReLockeQL
+
+[**ReLockeQL**](https://github.com/pur3miish/ReLockeQL) is ReLocke's programmable data and transaction layer: an open-source GraphQL client and server library for querying accounts, contracts, tables, and chain history through one typed interface.
+
+ReLockeQL helps developers and software agents work across configured ReLocke chain profiles while keeping endpoint selection, permissions, signing, and execution explicit. It can power applications, institutional interfaces, governance tools, simulations, and machine-readable financial workflows without hiding the chain-specific rules underneath them.
+
+[Source](https://github.com/pur3miish/ReLockeQL) · [npm](https://www.npmjs.com/package/relockeql) · [Live GraphQL playground](https://relocke.io/api/playground)
 
 ## Current work
 
