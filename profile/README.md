@@ -23,12 +23,12 @@ The goal is larger than deployment automation. We want software to be operable b
 | **Build & deploy** | Reproducible builds, preview environments, immutable releases, rollbacks, domains, logs, and runtime health. |
 | **Discover & compose** | A universal registry for services, contracts, packages, agents, APIs, networks, and the capabilities they expose. |
 | **Verify & trust** | Source provenance, signed artifacts, deployment attestations, ownership, interface compatibility, and security signals. |
-| **Connect ecosystems** | Native support for web applications, conventional APIs, Antelope contracts, decentralized infrastructure, and autonomous software. |
+| **Connect ecosystems** | Native support for web applications, conventional APIs, ReLocke-supported smart contracts, decentralized infrastructure, and autonomous software. |
 | **Operate together** | Shared projects, environments, policy, secrets, identities, events, observability, and automation. |
 
 ## Machine-readable software
 
-ReLocke extends familiar interfaces with the context needed for reliable discovery and operation. For Antelope and EOSIO ecosystems, this includes richer ABI semantics such as:
+ReLocke extends familiar interfaces with the context needed for reliable discovery and operation. For ReLocke-supported blockchains—WAX, Vaulta, XPR Network, XRP Ledger, and Jungle testnet—this includes richer contract and token semantics such as:
 
 - contract and token identity;
 - icons and human-readable asset metadata;
@@ -47,7 +47,7 @@ These ideas are not limited to blockchains. The same registry model can describe
 - **Human and machine legible.** Design metadata for both audiences.
 - **Composable without capture.** Enable ecosystems without requiring centralized ownership.
 - **Secure at every boundary.** Treat repositories, metadata, builds, networks, and external content as untrusted input.
-- **Progressive adoption.** Existing applications and Antelope contracts should become richer without breaking compatibility.
+- **Progressive adoption.** Existing applications and ReLocke-supported contracts should become richer without breaking compatibility.
 
 ## Current work
 
