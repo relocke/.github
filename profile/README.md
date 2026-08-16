@@ -11,7 +11,7 @@
 
 A shared platform for people and machines to design, model, challenge, and improve the fiscal systems that shape our world.
 
-[Website](https://relocke.io) · [Agentic ABI](https://github.com/relocke/agentic-abi) · [Get involved](https://github.com/relocke/.github/blob/main/CONTRIBUTING.md)
+[Website](https://relocke.io) · [Manifesto](https://relocke.io/manifesto) · [Agentic ABI](https://github.com/relocke/agentic-abi)
 
 </div>
 
@@ -82,30 +82,10 @@ ReLockeQL helps developers and software agents work across configured ReLocke ch
 
 [Source](https://github.com/pur3miish/ReLockeQL) · [npm](https://www.npmjs.com/package/relockeql) · [Live GraphQL playground](https://relocke.io/api/playground)
 
-## Current work
+## ReLocke Manifesto
 
-- [**Agentic ABI**](https://github.com/relocke/agentic-abi) — a versioned specification and LLM skill for creating rich contract and token interfaces that expose identity, actions, tables, provenance, permissions, side effects, and human-readable context.
-- **OSF design library** — reusable governance, fiscal, incentive, and resource-allocation patterns with explicit assumptions and trade-offs.
-- **Fiscal simulation and threat modeling** — tools and scenarios for challenging proposals before they are relied upon by communities or institutions.
-- **Financial interoperability** — interfaces that let open financial structures work across institutional and decentralized boundaries.
+The deeper philosophy, principles, and direction of Open Source Finance live in the [**ReLocke Manifesto**](https://relocke.io/manifesto).
 
-## Principles
-
-- **Governance is infrastructure.** Decision rights and fiscal authority must be designed as carefully as software.
-- **Power should be visible.** Document who can act, who benefits, who bears risk, and who can change the system.
-- **Assumptions should be testable.** Treat incentive and governance claims as hypotheses that can fail under pressure.
-- **Interoperability should preserve nuance.** Connect systems without pretending their legal, social, technical, and economic models are identical.
-- **Adversarial review improves resilience.** Invite structured criticism, simulations, and attack analysis before deployment.
-- **People and machines need shared context.** Publish rules and consequences in forms both can inspect without granting agents unchecked authority.
-- **Communities should retain agency.** Prefer structures that can be understood, challenged, adapted, and governed by their participants.
-
-## Build with us
-
-ReLocke is an open invitation to researchers, communities, developers, economists, governance designers, security practitioners, and people affected by financial systems.
-
-Read the [contribution guide](https://github.com/relocke/.github/blob/main/CONTRIBUTING.md), propose a fiscal structure, contribute a model, document an attack vector, challenge an assumption, or help turn an OSF idea into a transparent implementation.
-
-If you find a security issue, follow the [security policy](https://github.com/relocke/.github/blob/main/SECURITY.md) rather than opening a public issue.
 
 ---
 
