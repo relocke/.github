@@ -1,3 +1,6 @@
+> [!WARNING]
+> **Work in progress.** ReLocke is an evolving Open Source Finance research and development project. Its governance models, fiscal structures, code, and documentation are experimental and should be independently reviewed and stress-tested before real-world use.
+
 <div align="center">
 
 # ReLocke
