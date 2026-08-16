@@ -2,67 +2,100 @@
 
 # ReLocke
 
-### Infrastructure for open systems.
+### Open Source Finance for interoperable governance.
 
-Build, deploy, discover, and verify code, contracts, services, and autonomous software—from first commit to production.
+A shared platform for people and machines to design, model, challenge, and improve the fiscal systems that shape our world.
 
-[Website](https://relocke.io) · [Platform](https://relocke.io) · [Agentic ABI](https://github.com/relocke/agentic-abi) · [Get involved](https://github.com/relocke/.github/blob/main/CONTRIBUTING.md)
+[Website](https://relocke.io) · [Agentic ABI](https://github.com/relocke/agentic-abi) · [Get involved](https://github.com/relocke/.github/blob/main/CONTRIBUTING.md)
 
 </div>
 
 ---
 
-ReLocke is building a shared control plane for software that spans repositories, cloud services, decentralized networks, smart contracts, agents, and machine-readable interfaces.
+ReLocke is building a central point for individuals, communities, developers, and autonomous systems to devise governance structures that can interoperate with traditional finance and decentralized networks.
 
-The goal is larger than deployment automation. We want software to be operable by people and machines, portable across infrastructure, understandable at its boundaries, and verifiable from source to runtime.
+We call this **Open Source Finance (OSF)**: financial and fiscal systems whose rules, incentives, assumptions, interfaces, and consequences can be inspected, discussed, tested, and improved in public. OSF combines open-source software with transparent governance and blockchain infrastructure so communities can coordinate resources without hiding the structures of power that shape their choices.
 
-## What belongs in the platform
+## Why ReLocke exists
 
-| Capability | What it means |
+Financial systems do more than move money. They define who can participate, what behavior is rewarded, where resources flow, which risks are ignored, and who has the power to change the rules.
+
+ReLocke exists to make those structures explicit and testable. The platform is intended to help people:
+
+- design governance and fiscal structures for communities, protocols, public goods, and sectors of the economy;
+- connect traditional and decentralized financial systems without erasing the important differences between them;
+- create incentive structures that align participation, contribution, risk, and long-term outcomes;
+- model how governance decisions allocate capital, labor, attention, infrastructure, and other scarce resources;
+- expose assumptions, concentrations of power, failure modes, and unintended behavioral incentives; and
+- publish systems in forms that both people and machines can inspect and reason about.
+
+## A platform for adversarial testing
+
+Governance and financial structures should be challenged before their failures become embedded in production.
+
+ReLocke aims to give users and machines a coherent environment for defining threat models and attack vectors against modeled systems. Participants should be able to stress-test governance capture, incentive manipulation, coordination failures, liquidity shocks, permission boundaries, resource-allocation assumptions, and other risks that conventional financial design often leaves implicit.
+
+This work is about controlled, transparent, and ethical testing. The goal is to reveal weaknesses, document trade-offs, and improve resilience—not to exploit live financial systems or their participants.
+
+## What belongs in ReLocke
+
+| Area | What it explores |
 | --- | --- |
-| **Build & deploy** | Reproducible builds, preview environments, immutable releases, rollbacks, domains, logs, and runtime health. |
-| **Discover & compose** | A universal registry for services, contracts, packages, agents, APIs, networks, and the capabilities they expose. |
-| **Verify & trust** | Source provenance, signed artifacts, deployment attestations, ownership, interface compatibility, and security signals. |
-| **Connect ecosystems** | Native support for web applications, conventional APIs, ReLocke-supported smart contracts, decentralized infrastructure, and autonomous software. |
-| **Operate together** | Shared projects, environments, policy, secrets, identities, events, observability, and automation. |
+| **Governance structures** | Decision rights, representation, delegation, voting, accountability, dispute resolution, and the ability to change rules. |
+| **Fiscal systems** | Revenue, expenditure, treasury policy, public-goods funding, taxation, subsidies, issuance, and resource allocation. |
+| **Incentive design** | How rewards, costs, access, reputation, ownership, and risk shape individual and collective behavior. |
+| **Financial interoperability** | Interfaces between traditional finance, decentralized finance, institutions, communities, and chain-native assets. |
+| **Adversarial models** | Threat models, attack vectors, simulations, stress tests, failure scenarios, and governance-capture analysis. |
+| **Machine-readable institutions** | Open interfaces that let software agents inspect rules, explain consequences, and test proposals within explicit trust boundaries. |
 
-## Machine-readable software
+## What this organization will contain
 
-ReLocke extends familiar interfaces with the context needed for reliable discovery and operation. For ReLocke-supported blockchains—WAX, Vaulta, XPR Network, XRP Ledger, and Jungle testnet—this includes richer contract and token semantics such as:
+The ReLocke organization will collect and develop:
 
-- contract and token identity;
-- icons and human-readable asset metadata;
-- capability and interface types;
-- action and table semantics;
-- source repositories and immutable revision links;
-- deployment and network provenance; and
-- context that agents can interpret with explicit trust boundaries.
+- governance and fiscal design ideas;
+- open specifications and research notes;
+- code examples, smart contracts, interfaces, and reference implementations;
+- reusable incentive and resource-allocation structures;
+- models connecting traditional and decentralized financial systems;
+- adversarial scenarios and stress-testing methodologies;
+- tools for explaining institutional rules and their side effects; and
+- experiments that communities and developers can adapt to their own economic context.
 
-These ideas are not limited to blockchains. The same registry model can describe APIs, services, packages, agents, workflows, and deployment artifacts.
+The intention is not to prescribe one universal financial system. It is to make governance power, behavioral incentives, and fiscal consequences visible enough to be debated, compared, forked, and improved.
 
-## Principles
+## Supported blockchains
 
-- **Open by interface.** Prefer portable schemas and transparent boundaries.
-- **Verifiable by default.** Connect what is running to where it came from.
-- **Human and machine legible.** Design metadata for both audiences.
-- **Composable without capture.** Enable ecosystems without requiring centralized ownership.
-- **Secure at every boundary.** Treat repositories, metadata, builds, networks, and external content as untrusted input.
-- **Progressive adoption.** Existing applications and ReLocke-supported contracts should become richer without breaking compatibility.
+ReLocke currently supports **WAX, Vaulta, XPR Network, XRP Ledger, and Jungle testnet**.
+
+Each blockchain is handled through a ReLocke chain profile that respects its native account, contract, token, permission, and transaction model. Support for a chain does not imply that every chain implements governance or programmable assets in the same way.
 
 ## Current work
 
-- [`relocke/agentic-abi`](https://github.com/relocke/agentic-abi) — one versioned specification and LLM skill for creating rich, ReLocke-supported contract ABIs.
-- **ReLocke Platform** — the control plane for importing projects, building and deploying software, browsing source, managing environments, and publishing verified interfaces. The initial public foundation is being prepared.
-- **Universal Registry** — schemas and services for resolving capabilities, provenance, deployments, and human-facing metadata across ecosystems.
+- [**Agentic ABI**](https://github.com/relocke/agentic-abi) — a versioned specification and LLM skill for creating rich contract and token interfaces that expose identity, actions, tables, provenance, permissions, side effects, and human-readable context.
+- **OSF design library** — reusable governance, fiscal, incentive, and resource-allocation patterns with explicit assumptions and trade-offs.
+- **Fiscal simulation and threat modeling** — tools and scenarios for challenging proposals before they are relied upon by communities or institutions.
+- **Financial interoperability** — interfaces that let open financial structures work across institutional and decentralized boundaries.
+
+## Principles
+
+- **Governance is infrastructure.** Decision rights and fiscal authority must be designed as carefully as software.
+- **Power should be visible.** Document who can act, who benefits, who bears risk, and who can change the system.
+- **Assumptions should be testable.** Treat incentive and governance claims as hypotheses that can fail under pressure.
+- **Interoperability should preserve nuance.** Connect systems without pretending their legal, social, technical, and economic models are identical.
+- **Adversarial review improves resilience.** Invite structured criticism, simulations, and attack analysis before deployment.
+- **People and machines need shared context.** Publish rules and consequences in forms both can inspect without granting agents unchecked authority.
+- **Communities should retain agency.** Prefer structures that can be understood, challenged, adapted, and governed by their participants.
 
 ## Build with us
 
-ReLocke is early, and the architecture should be shaped in the open. Read the [contribution guide](https://github.com/relocke/.github/blob/main/CONTRIBUTING.md), propose an interface, document an integration, or help turn a platform primitive into working infrastructure.
+ReLocke is an open invitation to researchers, communities, developers, economists, governance designers, security practitioners, and people affected by financial systems.
 
-If you find a security issue, please follow our [security policy](https://github.com/relocke/.github/blob/main/SECURITY.md) rather than opening a public issue.
+Read the [contribution guide](https://github.com/relocke/.github/blob/main/CONTRIBUTING.md), propose a fiscal structure, contribute a model, document an attack vector, challenge an assumption, or help turn an OSF idea into a transparent implementation.
+
+If you find a security issue, follow the [security policy](https://github.com/relocke/.github/blob/main/SECURITY.md) rather than opening a public issue.
 
 ---
 
 <div align="center">
-<sub>Software should know what it is, where it came from, and how it can work with the world.</sub>
+<sub>Financial systems should be open enough to inspect, coherent enough to test, and adaptable enough to serve the people who live with their consequences.</sub>
 </div>
