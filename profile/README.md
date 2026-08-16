@@ -6,7 +6,7 @@
 
 Build, deploy, discover, and verify code, contracts, services, and autonomous software—from first commit to production.
 
-[Website](https://relocke.io) · [Platform](https://relocke.io) · [Skills](https://github.com/relocke/skills) · [Get involved](https://github.com/relocke/.github/blob/main/CONTRIBUTING.md)
+[Website](https://relocke.io) · [Platform](https://relocke.io) · [Agentic ABI](https://github.com/relocke/agentic-abi) · [Get involved](https://github.com/relocke/.github/blob/main/CONTRIBUTING.md)
 
 </div>
 
@@ -51,7 +51,7 @@ These ideas are not limited to blockchains. The same registry model can describe
 
 ## Current work
 
-- [`relocke/skills`](https://github.com/relocke/skills) — open guidance for interoperable agentic workflows and enriched Antelope ABIs.
+- [`relocke/agentic-abi`](https://github.com/relocke/agentic-abi) — one versioned specification and LLM skill for creating rich, ReLocke-supported contract ABIs.
 - **ReLocke Platform** — the control plane for importing projects, building and deploying software, browsing source, managing environments, and publishing verified interfaces. The initial public foundation is being prepared.
 - **Universal Registry** — schemas and services for resolving capabilities, provenance, deployments, and human-facing metadata across ecosystems.
 
