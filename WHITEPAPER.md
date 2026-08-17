@@ -65,8 +65,9 @@ The resulting model combines voice and exit:
 - networks can fork or change their rules; and
 - ReLocke can preserve interoperability across the resulting systems.
 
-The goal is not to select one permanent blockchain winner. It is to create an
-interoperable market of executable ideas.
+ReLocke is designed for a plural blockchain ecosystem: an interoperable market
+of executable ideas in which blockchains can remain independent, compete, and
+evolve.
 
 ## 1. The Thesis
 
