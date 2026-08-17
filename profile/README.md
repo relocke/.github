@@ -79,6 +79,6 @@ ReLocke provides natural-language-assisted contract authoring and a serverless C
 
 **WAX · XPR Network · Vaulta · Telos**
 
-One interface for people and machines. Independent networks remain independent.
+One interface for people and machines. Independent blockchains remain independent.
 
 </div>
