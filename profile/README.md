@@ -11,6 +11,6 @@ ReLocke is building a persistent cross-chain interface where people and machines
 
 **Currently supporting WAX, XPR Network, Vaulta, and Telos.**
 
-[Website](https://relocke.io) · [Technology & roadmap](../TECHNOLOGY.md) · [White paper](../WHITEPAPER.md) · [Documentation](https://relocke.io/docs) · [Contract Console](https://relocke.io/smart-contracts)
+[Website](https://relocke.io) · [Technology & roadmap](../TECHNOLOGY.md) · [White paper](../WHITEPAPER.md) · [Funding model](../FUNDING-AND-SUSTAINABILITY.md) · [Documentation](https://relocke.io/docs) · [Contract Console](https://relocke.io/smart-contracts)
 
 </div>
