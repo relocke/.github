@@ -66,7 +66,7 @@ The resulting model combines voice and exit:
 - ReLocke can preserve interoperability across the resulting systems.
 
 ReLocke is designed for a plural blockchain ecosystem: an interoperable market
-of executable ideas in which networks can remain independent, compete, and
+of executable ideas in which blockchains can remain independent, compete, and
 evolve.
 
 ## 1. The Thesis
