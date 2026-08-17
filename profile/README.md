@@ -7,7 +7,7 @@
 
 ### Making decentralized fragmentation interoperable.
 
-ReLocke is building a persistent cross-chain interface where people and machines can discover, design, deploy, test, and connect economic and coordination systems across independently governed networks.
+ReLocke is building a persistent cross-chain interface where people and machines can discover, design, deploy, test, and connect economic and coordination systems across independently governed blockchains.
 
 Fragmentation should create choice—not isolation. ReLocke keeps sovereign systems understandable and usable through a shared interface without asking them to surrender their identity, rules, or governance.
 
@@ -23,11 +23,13 @@ Fragmentation should create choice—not isolation. ReLocke keeps sovereign syst
 
 ## Why ReLocke exists
 
-Open-source technologies can express finance, governance, supply chains, tokenized compute, digital ownership, resource allocation, and other institutional systems as visible and executable architecture. Yet blockchains, applications, communities, traditional finance, and decentralized finance remain difficult to connect.
+Decentralization naturally creates fragmentation. Communities disagree, blockchains evolve under different rules, developers fork software, and economic systems diverge. That freedom is essential, but fragmentation should not mean isolation. People, applications, and machines should be able to move between sovereign systems without losing the ability to understand, compare, or interact with them.
 
-ReLocke is built for a world of independent blockchains and governance models. Its role is to provide the shared interface through which they can remain sovereign, interoperate, and evolve on their own terms.
+This is why ReLocke exists: to become a malleable, adaptable structure that can conform to the changing shapes of governance and economic systems. ReLocke provides an interoperability layer flexible enough to follow those changes while keeping independent systems discoverable, comparable, and usable through a common interface.
 
-ReLocke provides a shared environment where developers, users, investors, institutions, and autonomous agents can build and compare those systems, expose their weaknesses, measure their benefits, and improve them in public. Capital can help shape useful technology through transparent allocation, while communities retain the freedom to disagree, fork, and exit.
+Through this interface, investors, communities, and institutions can help shape the financial and governance systems they want to support. They can describe rules, incentives, ownership, risk, permissions, and governance in natural language; translate those ideas into understandable, inspectable, and deployable systems; and model or stress-test them before committing capital or authority. This lowers the technical barrier without removing the need for independent review, testing, audit, and explicit authorization.
+
+ReLocke assembles open-source technologies into a shared environment for developers, users, investors, institutions, and autonomous agents. Its continuity does not depend on any single community, company, foundation, organization, or blockchain. Capital can help shape useful technology through transparent allocation, while communities retain the freedom to experiment, compete, fork, and exit.
 
 This is **Open Source Finance**: the architecture governing money, value, resources, incentives, and power should be open enough to inspect, coherent enough to test, and adaptable enough to improve.
 
