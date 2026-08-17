@@ -173,6 +173,42 @@ The distinction is between fragmentation and isolation.
 Fragmentation permits experimentation and exit. Isolation destroys continuity.
 ReLocke aims to preserve continuity without erasing sovereignty.
 
+### Why ReLocke exists
+
+Decentralization naturally creates fragmentation. Communities disagree,
+blockchains evolve under different rules, developers fork software, and
+economic systems diverge. That freedom is essential, but fragmentation should
+not mean isolation. People, applications, and machines should be able to move
+between sovereign systems without losing the ability to understand, compare,
+or interact with them.
+
+ReLocke exists to become a malleable, adaptable structure that can conform to
+the changing shapes of governance and economic systems. It provides an
+interoperability layer flexible enough to follow those changes while keeping
+independent systems discoverable, comparable, and usable through a common
+interface.
+
+Through this interface, investors, communities, and institutions can help
+shape the financial and governance systems they want to support. Natural
+language can lower the technical barrier by expressing rules, incentives,
+ownership, risk, permissions, and governance as understandable and inspectable
+structures. Those structures can then be translated into reviewable
+specifications and, where supported, deployable contract artifacts. They should
+be modeled and stress-tested before capital or authority is committed, without
+removing the need for independent review, testing, audit, and explicit
+authorization.
+
+ReLocke assembles open-source technologies into a shared environment for
+developers, users, investors, institutions, and autonomous agents. Its
+continuity does not depend on any single community, company, foundation,
+organization, or blockchain. Capital can help shape useful technology through
+transparent allocation, while communities retain the freedom to experiment,
+compete, fork, and exit.
+
+This is Open Source Finance: the architecture governing money, value,
+resources, incentives, and power should be open enough to inspect, coherent
+enough to test, and adaptable enough to improve.
+
 ```mermaid
 flowchart TB
     H["Humans"] --> R["ReLocke"]
