@@ -9,8 +9,6 @@
 
 ReLocke is building a persistent cross-chain interface where people and machines can discover, design, deploy, test, and connect economic and coordination systems across independently governed blockchains.
 
-Fragmentation should create choice—not isolation. ReLocke keeps sovereign systems understandable and usable through a shared interface without asking them to surrender their identity, rules, or governance.
-
 **Currently supporting WAX, XPR Network, Vaulta, and Telos.**
 
 [Website](https://relocke.io) · [Documentation](https://relocke.io/docs) · [White paper](../WHITEPAPER.md) · [Build with us](https://github.com/relocke/.github/blob/main/CONTRIBUTING.md)
