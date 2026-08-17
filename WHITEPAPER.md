@@ -42,6 +42,13 @@ ReLocke is not dependent on any one of these names, stewards, implementations,
 or networks. It is built around the durable capabilities of the open
 architecture.
 
+Across those four networks, ReLocke already provides a shared GUI and GraphQL
+portal for people, developers, applications, LLMs, and autonomous agents. The
+platform can query accounts and contract state, derive interfaces and
+documentation from published ABIs, call actions, and prepare authorized smart-
+contract deployments and updates. It also supports natural-language-assisted
+smart-contract authoring through the web portal.
+
 Alongside this technology proposition, ReLocke proposes a distinct, future
 economic proposition: RLOC Capital. ReLocke would provide technical freedom,
 interoperability, and continuity. Subject to legal and regulatory design, RLOC
@@ -199,8 +206,9 @@ ReLocke is not intended to become another monolithic Layer 1. It is a portal,
 developer layer, and coordination surface above multiple systems.
 
 The present platform combines a shared GraphQL API, ABI-derived contract
-interfaces, load-balanced access to supported chains, signing support, a CDT
-compiler exposed through a Vercel backend endpoint, and a web frontend. WAX,
+interfaces, load-balanced access to supported chains, signing support, a
+Vercel Function-compatible CDT compilation endpoint backed by isolated Vercel
+Sandbox microVMs, natural-language contract authoring, and a web frontend. WAX,
 XPR Network, Vaulta, and Telos are supported targets rather than hypothetical
 future integrations.
 
@@ -337,11 +345,13 @@ binding merely because it appears in an ABI.
 
 ### Browser contract development and the CDT endpoint
 
-ReLocke has deployed an Antelope CDT compiler behind a Vercel endpoint used by
-the web portal. A user, application, machine, or future LLM integration can
-submit C++ contract source to the endpoint. The backend compiles the source and
-returns the two deployable artifacts required by an Antelope account-deployed
-contract: WebAssembly bytecode and its ABI.
+ReLocke has deployed an Antelope CDT compiler through a Vercel
+Function-compatible `POST /api/compile` endpoint used by the web portal. A user,
+application, machine, or LLM-assisted workflow can submit C++ contract source
+to the endpoint. Each compilation runs inside a disposable Vercel Sandbox
+microVM restored from a reusable CDT snapshot. The function returns the two
+deployable artifacts required by an Antelope account-deployed contract:
+WebAssembly bytecode and its ABI.
 
 The endpoint is a compilation backend, not a signing service. It should receive
 source and build inputs, not account credentials or private keys. The returned
@@ -360,7 +370,7 @@ This closes an important development loop:
 
 ```mermaid
 flowchart LR
-    A["Write C++ contract source<br/>in the ReLocke portal"] --> C["Send source to the<br/>Vercel CDT endpoint"]
+    A["Write C++ contract source<br/>in the ReLocke portal"] --> C["Send source to the<br/>Vercel Function"]
     C --> W["WASM<br/>executable contract"]
     C --> B["ABI<br/>actions, tables, and types"]
     B --> E["Enrich with Agentic ABI<br/>and Ricardian terms"]
@@ -401,7 +411,7 @@ flowchart TB
     U["Human, developer, application, LLM, or bot"] --> F["ReLocke web frontend and client interfaces"]
     F --> M["Agentic ABI<br/>Ricardian terms, meaning, and provenance"]
     F --> Q["ReLockeQL<br/>shared GraphQL endpoint"]
-    F --> C["Vercel CDT endpoint<br/>C++ source to WASM and ABI"]
+    F --> C["Vercel Function + Sandbox<br/>C++ source to WASM and ABI"]
     F --> S["Signing layer<br/>WebAuthn/WA and secp256k1/K1"]
 
     M --> A["Live ABI, code identity, permissions, and chain state"]
@@ -455,9 +465,15 @@ must still follow the configured authorization boundary.
 
 ## 7. From Ideas to Executable Institutions
 
-ReLocke's longer-term opportunity is larger than presenting existing chains.
-It can become an environment in which economic and governance structures are
-specified, modeled, deployed, and contested.
+ReLocke already supports natural-language-assisted smart-contract authoring
+through its web portal. A user can describe a contract in familiar language
+and use that description to produce reviewable contract source and structure
+before compilation, signing, or deployment.
+
+The longer-term opportunity is to extend that working capability beyond an
+individual contract. ReLocke can become an environment in which complete
+economic and governance structures are specified, modeled, deployed, and
+contested.
 
 A person or community might describe an institution in the natural language
 they know best—English, Mandarin, Thai, Japanese, or another language:
@@ -468,8 +484,8 @@ they know best—English, Mandarin, Thai, Japanese, or another language:
 > Distribute revenue under these conditions. Preserve these rights if the
 > community migrates to a new network.
 
-A future LLM-assisted development system could help turn that proposal into
-related artifacts:
+The next extension of ReLocke's existing LLM-assisted workflow can turn that
+broader proposal into related artifacts:
 
 ```mermaid
 flowchart TB
@@ -694,9 +710,10 @@ economic coordination.
 - ABI-derived GraphQL queries and mutations through ReLockeQL;
 - a shared API endpoint backed by load-balanced chain access;
 - a frontend for accounts, contracts, permissions, actions, and tables;
-- browser-based contract authoring with a Vercel CDT endpoint that returns WASM
-  and ABI artifacts;
+- browser-based contract authoring with a Vercel Function and isolated Sandbox
+  compilation that returns WASM and ABI artifacts;
 - client-side authorization for contract deployment and modification;
+- natural-language-assisted smart-contract authoring through the web portal;
 - Ricardian contract and Agentic ABI documentation surfaces; and
 - Antelope WebAuthn/WA and secp256k1/K1 signing support.
 
@@ -721,8 +738,8 @@ economic coordination.
 
 ### Phase III — Multilingual institutional workbench
 
-- integrate multilingual LLM assistance that translates structured proposals
-  into reviewable contract projects;
+- expand existing natural-language contract authoring into multilingual,
+  institution-scale proposals and reviewable contract projects;
 - pair executable contracts with Ricardian and Agentic ABI context;
 - generate tests, invariants, simulations, and adversarial scenarios;
 - visualize governance, permissions, capital flows, and failure modes; and
