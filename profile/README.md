@@ -1,6 +1,6 @@
 # ReLocke
 
-## Infrastructure for open economic systems shared by humans and machines
+## A shared platform for people and machines to design open economic and coordination systems
 
 ReLocke currently supports WAX, XPR Network, Vaulta, and Telos through a shared
 GUI and GraphQL portal. Users, developers, applications, LLMs, and autonomous
@@ -11,15 +11,16 @@ contract deployments and updates through one interface.
 This working platform is the foundation for ReLocke's broader interoperability
 and development layer for fragmented blockchain communities.
 
-Our aim is to create a nexus where developers, communities, machines,
-investors, and traditional and onchain financial systems can test competing
-ideas in public. Economic and governance structures should be visible,
-executable, measurable, and forkable—so their benefits can be demonstrated,
-their weaknesses exposed, and better systems developed.
+ReLocke is not limited to fiscal policy. It is a space for people and machines
+to design, model, challenge, and improve the architectures that coordinate
+value and resources—from tokenomics and Open Source Finance to supply chains,
+tokenized compute, governance, markets, and other programmable institutions.
 
-It is a place to reimagine money, value, authority, and institutional design as
-systems that can be built, deployed, observed, challenged, and improved—not
-only debated in theory.
+Our aim is to create a nexus where developers, communities, machines,
+investors, and traditional and onchain systems can test these competing
+architectures in public. Their rules should be visible, executable, measurable,
+and forkable so benefits can be demonstrated, weaknesses exposed, and better
+systems developed.
 
 Capital can provide soft power by supporting useful infrastructure and ideas.
 Communities retain the freedom to disagree, fork, and leave. ReLocke preserves
