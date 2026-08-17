@@ -685,6 +685,10 @@ Any specific offering terms, valuation, financial projections, portfolio
 allocation, investor rights, or return scenarios belong in separate definitive
 investment documents and financial models.
 
+The proposed capital relay, sustainability model, public challenge economy,
+and transition between traditional and decentralized finance are described in
+the [Funding and Sustainability Model](./FUNDING-AND-SUSTAINABILITY.md).
+
 Subject to appropriate securities, investment-company, brokerage, custody,
 tax, governance, and cross-border analysis, a future RLOC Capital vehicle could
 allocate capital toward productive assets and infrastructure associated with
