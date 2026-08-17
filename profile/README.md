@@ -25,6 +25,8 @@ Fragmentation should create choice—not isolation. ReLocke keeps sovereign syst
 
 Open-source technologies can express finance, governance, supply chains, tokenized compute, digital ownership, resource allocation, and other institutional systems as visible and executable architecture. Yet blockchains, applications, communities, traditional finance, and decentralized finance remain difficult to connect.
 
+ReLocke is built for a world of independent blockchains and governance models. Its role is to provide the shared interface through which they can remain sovereign, interoperate, and evolve on their own terms.
+
 ReLocke provides a shared environment where developers, users, investors, institutions, and autonomous agents can build and compare those systems, expose their weaknesses, measure their benefits, and improve them in public. Capital can help shape useful technology through transparent allocation, while communities retain the freedom to disagree, fork, and exit.
 
 This is **Open Source Finance**: the architecture governing money, value, resources, incentives, and power should be open enough to inspect, coherent enough to test, and adaptable enough to improve.
