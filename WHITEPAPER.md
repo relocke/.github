@@ -49,6 +49,15 @@ documentation from published ABIs, call actions, and prepare authorized smart-
 contract deployments and updates. It also supports natural-language-assisted
 smart-contract authoring through the web portal.
 
+ReLocke's broader goal is to create a nexus where traditional finance,
+decentralized finance, and scalable blockchain architecture can work together.
+Investors can express priorities through transparent capital allocation;
+developers and communities can build competing systems; and people, LLMs, and
+autonomous agents can model, stress-test, and challenge those systems before
+they control significant capital or authority. The purpose is to expose both
+the benefits and the vulnerabilities of a design to the people who fund,
+engineer, govern, and depend upon it.
+
 Alongside this technology proposition, ReLocke proposes a distinct, future
 economic proposition: RLOC Capital. ReLocke would provide technical freedom,
 interoperability, and continuity. Subject to legal and regulatory design, RLOC
@@ -564,6 +573,36 @@ inspected and tested.
 
 ## 8. A Computational Marketplace of Ideas
 
+### A nexus for capital, code, and governance
+
+ReLocke's goal is to create a shared environment where traditional finance,
+decentralized finance, and scalable blockchain architecture can meet. It is a
+place for economic and governance systems to be proposed, implemented,
+modeled, tested, challenged, and improved—not merely another interface for
+moving financial assets.
+
+Within this environment, investors can exercise soft power through transparent
+capital allocation rather than technical control. They can support particular
+infrastructure, governance experiments, development teams, or economic models
+without requiring every community to adopt them. Developers and communities
+remain free to compete for capital, build alternatives, fork open-source
+systems, and demonstrate that a different design produces better outcomes.
+
+Machines, LLMs, and agentic tools extend the range and speed of that inquiry.
+They can explore permission structures, search for adversarial strategies,
+test incentive assumptions, model financial flows, identify operational
+dependencies, and expose failure modes. Their results should be presented in
+forms that investors, communities, engineers, economists, and institutional
+architects can inspect and contest. Models do not prove that a system is safe
+or legitimate; they make more of its assumptions and tradeoffs visible before
+real capital or authority is committed.
+
+ReLocke is therefore not solely a financial platform. It combines finance,
+governance, and software into a common workbench. Bringing together human
+judgment, machine analysis, open-source engineering, and capital from both
+traditional and decentralized markets creates a stronger basis for addressing
+the governance problems that decentralized systems inherit or create.
+
 Political and economic systems are usually debated in prose before their
 second-order effects can be observed. Programmable institutions allow more of
 those assumptions to be made explicit.
@@ -590,6 +629,13 @@ metrics, and pathways from experiment to production.
 The underlying networks become a field of competing institutional designs.
 ReLocke lets participants observe and move through that field without requiring
 every design to converge.
+
+Companion ReLocke research will examine specific failures in contemporary
+governance and the financial-governance structures embedded within existing
+institutions. Those diagnoses provide important context, but they are outside
+the scope of this paper. This white paper focuses on the infrastructure needed
+to make proposed alternatives inspectable, executable, comparable, and open to
+challenge.
 
 ## 9. Governance Through Voice and Exit
 
@@ -630,6 +676,14 @@ Communities with good ideas still compete against well-capitalized institutions.
 RLOC Capital is the proposed response to that constraint. It should be designed
 as a separate legal and economic structure from ReLocke's initial technology
 financing.
+
+Capital appears in this white paper as an architectural input to governance,
+not as a public investment solicitation. Its intended role is to give
+investors and markets a transparent way to support promising systems while
+leaving technical access, community sovereignty, and the right to fork intact.
+Any specific offering terms, valuation, financial projections, portfolio
+allocation, investor rights, or return scenarios belong in separate definitive
+investment documents and financial models.
 
 Subject to appropriate securities, investment-company, brokerage, custody,
 tax, governance, and cross-border analysis, a future RLOC Capital vehicle could
