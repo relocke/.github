@@ -2,10 +2,14 @@
 
 ## Infrastructure for open economic systems shared by humans and machines
 
-ReLocke is building an interoperability and development layer for fragmented
-blockchain communities. It gives users, developers, applications, LLMs, and
-autonomous agents a common way to understand, build, authorize, and interact
-with smart-contract systems across WAX, XPR Network, Vaulta, and Telos.
+ReLocke currently supports WAX, XPR Network, Vaulta, and Telos through a shared
+GUI and GraphQL portal. Users, developers, applications, LLMs, and autonomous
+agents can query accounts and contract state, discover and document deployed
+contracts from their live ABIs, call contract actions, and prepare authorized
+contract deployments and updates through one interface.
+
+This working platform is the foundation for ReLocke's broader interoperability
+and development layer for fragmented blockchain communities.
 
 Our aim is to create a nexus where developers, communities, machines,
 investors, and traditional and onchain financial systems can test competing
@@ -50,18 +54,20 @@ flowchart LR
 | **ReLockeQL** | Reads live contract ABIs and generates GraphQL queries and mutations through a shared multi-chain API. |
 | **Agentic ABI** | Extends the executable ABI with contract intent, permissions, risks, side effects, provenance, versions, and context that people and machines can understand. |
 | **Ricardian contract interface** | Displays human-readable contractual terms beside the executable smart-contract interface. Legal effect depends on the relevant agreement and law. |
-| **CDT compiler endpoint** | A Vercel backend that accepts C++ contract source and returns compiled WASM and ABI artifacts for browser review. |
+| **CDT compiler endpoint** | A Vercel Function-compatible endpoint that accepts C++ source, compiles it inside an isolated Vercel Sandbox microVM, and returns WASM and ABI artifacts for browser review. |
 | **Client-authorized deployment** | Deploys reviewed WASM and ABI artifacts using the permissions and signatures of the selected blockchain account. |
 | **WebAuthn and K1 signing** | Supports Antelope WebAuthn/WA and secp256k1/K1 authorization paths. |
 | **Multi-chain infrastructure** | Provides load-balanced access to WAX, XPR Network, Vaulta, and Telos while keeping each network's identity and governance explicit. |
+| **Natural-language contract authoring** | Allows users to describe a smart contract in natural language and generate reviewable contract source and structure through the web portal. |
 
-## What comes next
+## Direction
 
-ReLocke intends to connect multilingual LLM assistance to this existing stack.
-A person or community could describe an application, treasury, financial
-system, permission model, or governance structure in a familiar language. The
-result would be translated into reviewable specifications, Ricardian terms,
-contract source, permissions, tests, simulations, and deployable artifacts.
+ReLocke already supports natural-language-assisted smart-contract authoring.
+The next step is to expand that capability from individual contracts into
+complete applications, treasuries, financial systems, permission models, and
+governance structures expressed in a familiar language. These designs can be
+translated into reviewable specifications, Ricardian terms, contract source,
+permissions, tests, simulations, and deployable artifacts.
 
 Natural language will remain an authoring interface—not runtime truth.
 Generated systems must be reviewed, compiled, tested, simulated, and explicitly
