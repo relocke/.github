@@ -1,57 +1,82 @@
+> [!WARNING]
+> **Work in progress.** ReLocke is an active research and development project. Its software, governance models, financial structures, and documentation should be independently reviewed and stress-tested before production use.
+
+<div align="center">
+
 # ReLocke
 
-## Our mission
+### Making decentralized fragmentation interoperable.
 
-ReLocke exists to make decentralized fragmentation interoperable.
+ReLocke is building a persistent cross-chain interface where people and machines can discover, design, deploy, test, and connect economic and coordination systems across independently governed networks.
 
-Our mission is to provide a persistent interface and shared environment where
-people and machines can design, deploy, integrate, model, challenge, and
-improve economic and coordination systems across independently governed
-networks.
+Fragmentation should create choice—not isolation. ReLocke keeps sovereign systems understandable and usable through a shared interface without asking them to surrender their identity, rules, or governance.
 
-## Why we exist
+**Currently supporting WAX, XPR Network, Vaulta, and Telos.**
 
-Decentralization naturally creates fragmentation. Communities disagree,
-networks evolve under different rules, developers fork software, and economic
-systems diverge. That freedom is essential, but fragmentation should not mean
-isolation. People and applications should be able to move between sovereign
-systems without losing the ability to understand, compare, or interact with
-them.
+[Website](https://relocke.io) · [Documentation](https://relocke.io/docs) · [White paper](../WHITEPAPER.md) · [Build with us](https://github.com/relocke/.github/blob/main/CONTRIBUTING.md)
 
-Traditional finance and decentralized finance are also largely separated.
-Open-source communities can create new forms of governance, tokenomics,
-resource allocation, supply-chain coordination, tokenized compute, and digital
-ownership, but they still depend on capital and physical infrastructure funded
-through traditional markets. Investors can allocate capital, but often lack
-transparent ways to understand, test, and influence the technology and
-governance structures that capital helps create.
+</div>
 
-## What we want to achieve
+---
 
-ReLocke aims to become a nexus where developers, communities, users, autonomous
-agents, investors, and traditional and decentralized financial systems can
-meet. It brings open-source technologies together so new financial and
-institutional architectures can be expressed as visible, executable, testable,
-and forkable systems rather than remaining only as theories or closed rules.
+<div align="center">
 
-The objective is not to impose one permanent network or governance model. It is
-to create a space where competing systems can be deployed and stress-tested,
-their benefits demonstrated, their weaknesses exposed, and their structures
-improved by the people and machines that use them.
+## Why ReLocke exists
 
-By connecting traditional finance with open digital infrastructure, ReLocke
-also seeks to explore transparent structures through which capital and
-productive returns can support both ecosystems. Investors can exercise soft
-power through informed capital allocation, while developers and communities
-retain the freedom to experiment, compete, fork, and exit.
+Open-source technologies can express finance, governance, supply chains, tokenized compute, digital ownership, resource allocation, and other institutional systems as visible and executable architecture. Yet blockchains, applications, communities, traditional finance, and decentralized finance remain difficult to connect.
 
-This is the idea behind **Open Source Finance**: the architecture governing
-money, value, resources, incentives, and power should be open enough to inspect,
-coherent enough to test, and adaptable enough to improve.
+ReLocke provides a shared environment where developers, users, investors, institutions, and autonomous agents can build and compare those systems, expose their weaknesses, measure their benefits, and improve them in public. Capital can help shape useful technology through transparent allocation, while communities retain the freedom to disagree, fork, and exit.
 
-**Fragmentation should create choice—not isolation. ReLocke provides the layer
-that keeps those choices connected.**
+This is **Open Source Finance**: the architecture governing money, value, resources, incentives, and power should be open enough to inspect, coherent enough to test, and adaptable enough to improve.
 
-[Read the ReLocke white paper](../WHITEPAPER.md) ·
-[Visit ReLocke](https://relocke.io)
+</div>
 
+## Technology
+
+### [ReLockeQL](https://relocke.io/docs/relockeql-api-infrastructure)
+
+ReLockeQL reads the published ABI of compatible smart contracts and exposes accounts, permissions, actions, tables, state, and transaction history through one typed GraphQL model. It gives developers, applications, LLMs, and users a consistent interface across WAX, XPR Network, Vaulta, and Telos while keeping the selected chain explicit.
+
+The API can prepare typed mutations and compose ordered actions into one atomic transaction. The ReLocke GUI uses the same infrastructure so people can discover contracts, read ABI-derived documentation, query cross-chain state, and prepare actions without writing GraphQL by hand.
+
+[Read the guide](https://relocke.io/docs/relockeql-api-infrastructure) · [Open the GraphQL playground](https://relocke.io/api/playground) · [API endpoint](https://relocke.io/api) · [Source](https://github.com/pur3miish/ReLockeQL)
+
+### [Antelope WebAuthn](https://github.com/pur3miish/antelope-webauthn)
+
+Antelope WebAuthn connects passkeys and platform authenticators to Antelope-compatible signatures. Private-key operations remain protected by the user's authenticator and local approval surface—such as biometrics, a device PIN, a TPM, secure enclave, or hardware security key—while public keys can be attached to on-chain account permissions.
+
+WebAuthn is a W3C standard implemented across major browser and operating-system ecosystems, including Apple, Google, and Microsoft platforms. Some authenticators are device-bound; some passkeys may be securely synchronized by the user's platform provider. ReLocke preserves that distinction instead of claiming every credential is permanently tied to one physical device.
+
+This creates a common approval experience across supported chains: ReLocke prepares an inspectable action, the user or investor reviews it, the authenticator approves it locally, and the selected network enforces its own on-chain permissions.
+
+[How device-secured access works](https://relocke.io/docs/device-secured-digital-assets) · [Source](https://github.com/pur3miish/antelope-webauthn)
+
+### [ReLocke Contract Console](https://relocke.io/docs/contract-console)
+
+The Contract Console turns deployed smart contracts into a discoverable cross-chain workspace. Users can browse native, linked, or tracked contracts; inspect ABI and Agentic ABI documentation; query tables; assemble multi-contract action workflows; and review the chain, accounts, parameters, and permissions before signing.
+
+It solves a basic accessibility problem: smart contracts should not be usable only by developers or machines that know a chain's RPC conventions. The same live contract surface can be explored through the GUI or consumed through ReLockeQL by applications and autonomous systems.
+
+[Read the guide](https://relocke.io/docs/contract-console) · [Open the console](https://relocke.io/smart-contracts)
+
+### [Agentic ABI](https://github.com/relocke/agentic-abi)
+
+Agentic ABI enriches the executable ABI with structured contract identity, intent, permissions, risks, side effects, provenance, versions, icons, Ricardian terms, and human-readable context. People and machines can inspect the same model without confusing documentation with executable authority.
+
+[Read the guide](https://relocke.io/docs/agentic-abi) · [Specification and tooling](https://github.com/relocke/agentic-abi)
+
+### [Browser contract development](https://relocke.io/docs/native-antelope-smart-contracts)
+
+ReLocke provides natural-language-assisted contract authoring and a serverless CDT compilation service. C++ source can be compiled in isolated disposable environments into reviewable WASM and ABI artifacts, then deployed client-side with the selected account's explicit authorization.
+
+[Native contract guide](https://relocke.io/docs/native-antelope-smart-contracts)
+
+---
+
+<div align="center">
+
+**WAX · XPR Network · Vaulta · Telos**
+
+One interface for people and machines. Independent networks remain independent.
+
+</div>
