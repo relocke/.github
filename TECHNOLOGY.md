@@ -151,5 +151,6 @@ before they control real assets or institutional authority.
 - [ReLocke](https://relocke.io)
 - [Documentation](https://relocke.io/docs)
 - [White paper](./WHITEPAPER.md)
+- [Funding and sustainability model](./FUNDING-AND-SUSTAINABILITY.md)
 - [Contract Console](https://relocke.io/smart-contracts)
 - [ReLockeQL API playground](https://relocke.io/api/playground)
